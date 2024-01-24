@@ -38,6 +38,7 @@ func SetupUserRoutes(app *fiber.App) {
 	alerts.Post("/networks", routes.Alertnetwork)
 	//alertID
 	alertaccount.Post("/accountalertid", routes.GetAccInfo)
+	alerts.Post("/id", routes.TransactionIDmatches)
 
 	//--------------------------- Janus --------------------------------//
 	app.Post("/janusloan", routes.CreateResponse)

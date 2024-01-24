@@ -113,7 +113,7 @@ func main() {
 			middleware.GetEnv("SSL_KEY"),
 		))
 	} else {
-		err := app.Listen(fmt.Sprintf("192.168.0.123:%s", middleware.GetEnv("PORT")))
+		err := app.Listen(fmt.Sprintf("192.168.0.96:%s", middleware.GetEnv("PORT")))
 		if err != nil {
 			log.Fatal(err.Error())
 		}

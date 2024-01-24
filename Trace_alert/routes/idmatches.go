@@ -1,4 +1,4 @@
-package tracealert
+package routes
 
 import (
 	"instapay/db"
